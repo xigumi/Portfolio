@@ -3,61 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mon Portfolio</title>
+  <title>Nicolas Van Donselaar | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Importation d'icônes modernes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+  <!-- Barre de Navigation -->
   <header>
-    <h1>Nicolas van Donselaar</h1>
-    <p>Développeur / Étudiant</p>
-    <nav>
-      <a href="#scolaire">Projets scolaires</a>
-      <a href="#pro">Projets professionnels</a>
-      <a href="#infos">+ d'infos</a>
-    </nav>
+    <div class="header-container">
+      <div class="logo">
+        <span class="code-bracket">&lt;</span> Nicolas <span class="code-bracket">/&gt;</span>
+      </div>
+      <nav>
+        <a href="#projets"><i class="fa-solid fa-code"></i> Projets</a>
+        <a href="#competences"><i class="fa-solid fa-gears"></i> Compétences</a>
+        <a href="#pro"><i class="fa-solid fa-briefcase"></i> Expériences</a>
+        <a href="#infos"><i class="fa-solid fa-user"></i> Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="scolaire">
-    <h2>Projets Personnel et Educatif</h2>
+  <!-- Section Hero (Accueil) -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Nicolas <span class="highlight">Van Donselaar</span></h1>
+      <p class="subtitle">Étudiant en BUT Informatique | Passionné de Réseaux, Dev & Cybersécurité</p>
+      <div class="hero-buttons">
+        <a href="#projets" class="btn">Voir mes projets</a>
+        <a href="Nicolas VAN DONSELAAR.pdf" download class="btn btn-outline"><i class="fa-solid fa-download"></i> Télécharger mon CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projets">
+    <h2 class="section-title">Mes Projets</h2>
     <div class="grid">
-      <div class="card">
-        <h3>Projet Particules</h3>
-        <p>Le projet Particules est un projet réaliser pour la SAE de developpement en BUT1 avec Arthur Mezange</p>
-        <img src="Projet-particules.png" alt="Projet Particules" width="470" height="300">
-        <a href="https://github.com/XiguMi/Projet-Particules" target="_blank" class="btn btn-secondary">Github du projet</a>
+      
+      <!-- Projet 1: Particules -->
+      <div class="card project-card">
+        <div class="card-badge">Go / SAE</div>
+        <div class="card-content">
+          <h3>Projet Particules</h3>
+          <p>Développement d'un moteur de simulation de particules en groupe dans le cadre d'une SAE en BUT1 avec Arthur Mezange.</p>
+          <div class="tech-tags">
+            <span>Go</span>
+            <span>Simulation</span>
+            <span>Git</span>
+          </div>
+          <a href="https://github.com/XiguMi/Projet-Particules" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Voir le dépôt</a>
+        </div>
+      </div>
+
+      <!-- Projet 2: Jeu Python (Ajouté) -->
+      <div class="card project-card">
+        <div class="card-badge">Python / Jeu</div>
+        <div class="card-content">
+          <h3>Développement de Jeu</h3>
+          <p>Création complète d'un jeu vidéo en Python combinant logique de programmation orientée objet et gestion d'interface.</p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>OOP</span>
+            <span>Gaming</span>
+          </div>
+          <span class="project-link disabled"><i class="fa-solid fa-code-branch"></i> Projet Universitaire</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section Compétences (Nouvelle fonctionnalité) -->
+  <section id="competences" class="bg-alt">
+    <h2 class="section-title">Compétences Techniques</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3><i class="fa-solid fa-terminal"></i> Systèmes & Réseaux</h3>
+        <ul>
+          <li>Linux (Environnement de dev quotidien)</li>
+          <li>Administration & Architecture Réseaux</li>
+          <li>Notions en Cybersécurité (Pentesting)</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fa-solid fa-code"></i> Développement</h3>
+        <ul>
+          <li>Go (Golang)</li>
+          <li>Python (Algorithmes, Scripts, Jeux)</li>
+          <li>HTML5 / CSS3 / JavaScript</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Expériences Professionnelles -->
+  <section id="pro">
+    <h2 class="section-title">Expérience Professionnelle</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">Mars – Août 2025</div>
+        <div class="timeline-content">
+          <h3>Inventoriste</h3>
+          <p>Première expérience professionnelle significative. Développement de la rigueur, de l'autonomie et de la gestion de la ponctualité sur le terrain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact & Infos -->
+  <section id="infos" class="bg-alt">
+    <h2 class="section-title">Me Contacter</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Restons en contact</h3>
+        <p>Actuellement étudiant en informatique, je suis à l'écoute d'opportunités (notamment en apprentissage pour la suite de mon parcours).</p>
+        <ul class="info-list">
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:vandonselaarn@gmail.com">vandonselaarn@gmail.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> France</li>
+        </ul>
+        <div class="buttons">
+          <a href="https://github.com/XiguMi" target="_blank" class="btn btn-github"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
       </div>
       
+      <!-- Formulaire de contact fonctionnel visuellement -->
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Message envoyé ! (Simulation)');">
+        <div class="form-group">
+          <input type="text" placeholder="Votre Nom" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Votre Email" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Votre Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Envoyer <i class="fa-solid fa-paper-plane"></i></button>
+      </form>
     </div>
   </section>
 
-  <section id="pro">
-    <h2>Projets professionnels</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Inventoriste</h3>
-        <p>J’ai travaillé en tant qu’inventoriste de mars à août 2025. Ce fut ma première expérience professionnelle.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="infos" class="infos">
-    <h2>+ d'infos</h2>
-    <ul>
-      <li><strong>Nom :</strong> Nicolas Van Donselaar</li>
-      <li><strong>Email :</strong> vandonselaarn@gmail.com</li>
-    </ul>
-
-    <div class="buttons">
-      <a href="cv_Nicolas_van-Donselaar.pdf" download class="btn">Télécharger mon CV</a>
-      <a href="https://github.com/XiguMi" target="_blank" class="btn btn-secondary">Mon GitHub</a>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <p>© 2026 - Nicolas Van Donselaar</p>
+    <p>© 2026 - Nicolas Van Donselaar | Fait avec rigueur et passion</p>
   </footer>
 
 </body>
 </html>
-
